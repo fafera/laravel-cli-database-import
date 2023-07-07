@@ -64,7 +64,6 @@ class ImportDatabaseCommand extends Command
         Storage::disk('public')->put($dumpFile, $contents);
         $sftp->delete($dumpFile);
         $this->info('Dump realizado com sucesso!');
-        return;
     }
     private function populate():void
     {
