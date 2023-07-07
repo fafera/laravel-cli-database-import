@@ -2,6 +2,9 @@
 A Command to run on Laravel artisan that will dump the current Mysql database from your Hosgator environment and import on your current localhost database.
 **Important: This command needs that you have the ssh connection with Hostgator already configured on your environment**.
 
+## Requirements
+- phpseclib3\Net\SFTP;
+
 ## How to use
 - Put this file on `/app/Console/Commands`.
 - Set the following variables on your `.env`.
@@ -17,4 +20,5 @@ A Command to run on Laravel artisan that will dump the current Mysql database fr
 ### Additional Comments
 The dump .sql file on Hostgator is used only to be downloaded to localhost. After download it's deleted from environment.
 The current Laravel storage path is defined to `public`.
+
  
