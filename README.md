@@ -3,7 +3,7 @@ A Command to run on Laravel artisan that will dump the current Mysql database fr
 **Important: This command needs that you have the ssh connection with Hostgator already configured on your environment**.
 
 ## Requirements
-- phpseclib3\Net\SFTP;
+- phpseclib3\Net\SFTP.
 
 ## How to use
 - Put this file on `/app/Console/Commands`.
